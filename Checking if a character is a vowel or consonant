@@ -1,0 +1,18 @@
+public static void checkVowelConsonant(char ch) {
+    ch = Character.toLowerCase(ch);
+    switch (ch) {
+        case 'a':
+        case 'e':
+        case 'i':
+        case 'o':
+        case 'u':
+            System.out.println(ch + " is a vowel.");
+            break;
+        default:
+            if (Character.isAlphabetic(ch)) {
+                System.out.println(ch + " is a consonant.");
+            } else {
+                System.out.println(ch + " is not an alphabet.");
+            }
+    }
+}
